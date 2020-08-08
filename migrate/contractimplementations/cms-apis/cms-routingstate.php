@@ -1,9 +1,9 @@
 <?php
-namespace PoP\QueriedObject\WP;
+namespace PoPSchema\QueriedObject\WP;
 
 use PoP\RoutingWP\RoutingManagerTrait;
 
-class WPCMSRoutingState extends \PoP\QueriedObject\AbstractCMSRoutingState
+class WPCMSRoutingState extends \PoPSchema\QueriedObject\AbstractCMSRoutingState
 {
     use RoutingManagerTrait;
 

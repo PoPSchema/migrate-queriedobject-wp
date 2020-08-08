@@ -1,12 +1,12 @@
 {
-    "name": "getpop/migrate-queriedobject-wp",
+    "name": "pop-schema/migrate-queriedobject-wp",
     "type": "library",
-    "description": "(Temporary package) Migrate code to package https://github.com/getpop/queriedobject-wp. Target package description: Implementation for WordPress of contracts from package \"Queried Object\"",
+    "description": "(Temporary package) Migrate code to package https://github.com/pop-schema/queriedobject-wp. Target package description: Implementation for WordPress of contracts from package \"Queried Object\"",
     "keywords": [
         "PoP",
         "queriedobject-wp"
     ],
-    "homepage": "https://github.com/getpop/migrate-queriedobject-wp",
+    "homepage": "https://github.com/pop-schema/migrate-queriedobject-wp",
     "license": "MIT",
     "authors": [
         {
