@@ -1,6 +1,7 @@
 <?php
 namespace PoPSchema\QueriedObject\WP;
 
+use \WP_Query;
 use PoP\RoutingWP\RoutingManagerTrait;
 
 class WPCMSRoutingState extends \PoPSchema\QueriedObject\AbstractCMSRoutingState
@@ -10,17 +11,19 @@ class WPCMSRoutingState extends \PoPSchema\QueriedObject\AbstractCMSRoutingState
     public function getQueriedObject()
     {
         $this->init();
+        /** @var WP_Query */
+        $query = $this->query;
         if ($this->isStandard()) {
             return null;
         } elseif (
-            $this->query->is_tag() ||
-            $this->query->is_page() ||
-            $this->query->is_single() ||
-            $this->query->is_author() ||
-            $this->query->is_category()
+            $query->is_tag() ||
+            $query->is_page() ||
+            $query->is_single() ||
+            $query->is_author() ||
+            $query->is_category()
         ) {
 
-            return $this->query->get_queried_object();
+            return $query->get_queried_object();
         }
 
         return null;
